@@ -1,0 +1,46 @@
+---
+title: "Fair_data_exercise"
+author: "Oluwaseun Gakenou"
+date: '2022-06-29'
+output: html_document
+---
+
+## Canadian Principal Crops dataset.
+\
+The original dataset and detailed description can be found at: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3210035901. However, the subsetted version by the Skills Network Labs available at: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-RP0203EN-SkillsNetwork/labs/Practice%20Assignment/Annual_Crop_Data.csv will be used for this demonstration
+
+
+```{r packages, echo=TRUE, warning=FALSE, message=FALSE}
+#Loading libraries
+
+library(tidyverse)
+```
+
+```{r read_data, echo=TRUE, warning=FALSE, message=FALSE}
+#Read the data using the Skills Network Labs url
+
+crop_df <- read.csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-RP0203EN-SkillsNetwork/labs/Final%20Project/Annual_Crop_Data.csv', 
+                    colClasses = c(YEAR = 'character'))
+```
+
+```{r echo=FALSE}
+knitr::kable(head(crop_df, 6))  
+
+```
+
+In this dataset, there are four types of crops (Barley, Canola, Rye and Wheat). For the puporose of this exercise, we will subset the data to contain only Barley for three years (1965 - 1967)
+
+```{r subset_data, echo=TRUE, warning=FALSE, message=FALSE}
+#subset crop_df dataframe using the filter() function
+
+crop_df_sub <- crop_df %>%
+  filter(CROP_TYPE == 'Barley', YEAR %in% c('1965-12-31', '1966-12-31', '1967-12-31'))
+```
+
+```{r bar_graph, echo=TRUE, warning=FALSE, message=FALSE}
+# A bar graph to show the average yield of Barley for Alberta, Canada and Saskatchewan in the year 1965 - 1967
+
+crop_bar <- ggplot(crop_df_sub, aes(x = YEAR, y = AVG_YIELD, fill = GEO)) +
+  geom_bar(stat = "identity", color = "black", position = position_dodge())
+crop_bar
+```
