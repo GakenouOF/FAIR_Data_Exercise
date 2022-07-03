@@ -10,6 +10,6 @@ In the original dataset, there are four types of crops (Barley, Canola, Rye and 
 
 The result showed that there was an increase in the average yield of barley from 1965 to 1966, which later declined in 1967. Overall, Alberta had the highest average yield of barley for the three years.
 
-```{r error, fig.align = 'center', out.width = "100%", fig.cap = "A bar graph to show the average yield of Barley for Alberta, Canada and Saskatchewan in the year 1965 - 1967", echo=FALSE, warning=FALSE}
-knitr::include_graphics(here::here("Fair_data", "cropbar.jpg"))  
-```
+![This is an image](https://github.com/GakenouOF/FAIR-Data---Exercise/blob/main/cropbar.png)
+
+
