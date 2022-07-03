@@ -6,6 +6,16 @@ The original dataset and detailed description can be found [here](https://www150
 
 In the original dataset, there are four types of crops (Barley, Canola, Rye and Wheat). This was further subsetted to contain only Barley for three years (1965 - 1967).
 
+## Column description
+
+YEAR: Date (YYYY/mm/dd)
+CROP_TYPE: Type of crop 
+GEO: Geography
+SEEDED_AREA: Seeded area in acres
+HARVESTED_AREA: Harvested area in acres
+PRODUCTION: Production in bushels
+AVG_YIELD: Average yield in bushels per acre
+
 ## Result
 
 The result showed that there was an increase in the average yield of barley from 1965 to 1966, which later declined in 1967. Overall, Alberta had the highest average yield of barley for the three years.
@@ -14,6 +24,6 @@ The result showed that there was an increase in the average yield of barley from
 
 | ![cropbar](https://github.com/GakenouOF/FAIR-Data---Exercise/blob/main/cropbar.png) |
 |:--:| 
-| *A bar graph to show the average yield of Barley for Alberta, Canada and Saskatchewan in the year 1965 - 1967* |
+| *A bar graph showing the average yield of Barley for Alberta, Canada and Saskatchewan in the year 1965 - 1967* |
 
 
