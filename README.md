@@ -12,6 +12,8 @@ The result showed that there was an increase in the average yield of barley from
 
 
 
-![cropbar](https://github.com/GakenouOF/FAIR-Data---Exercise/blob/main/cropbar.png "A bar graph to show the average yield of Barley for Alberta, Canada and Saskatchewan in the year 1965 - 1967")
+| ![cropbar](https://github.com/GakenouOF/FAIR-Data---Exercise/blob/main/cropbar.png) |
+|:--:| 
+| *A bar graph to show the average yield of Barley for Alberta, Canada and Saskatchewan in the year 1965 - 1967* |
 
 
