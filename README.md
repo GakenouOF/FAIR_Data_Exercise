@@ -8,13 +8,13 @@ In the original dataset, there are four types of crops (Barley, Canola, Rye and 
 
 ## Column description
 
-YEAR: Date (YYYY/mm/dd)
-CROP_TYPE: Type of crop 
-GEO: Geography
-SEEDED_AREA: Seeded area in acres
-HARVESTED_AREA: Harvested area in acres
-PRODUCTION: Production in bushels
-AVG_YIELD: Average yield in bushels per acre
+- YEAR: Date (YYYY/mm/dd)
+- CROP_TYPE: Type of crop 
+- GEO: Geography
+- SEEDED_AREA: Seeded area in acres
+- HARVESTED_AREA: Harvested area in acres
+- PRODUCTION: Production in bushels
+- AVG_YIELD: Average yield in bushels per acre
 
 ## Result
 
